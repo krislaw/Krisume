@@ -1,6 +1,8 @@
-LIVE DEMO: http://www.krislaw.github.io/Krisume/main.html
+LIVE DEMO: http://krislaw.github.io/Krisume/main.html
 
 wip!
 
-TODO: fix display on mobile/disable scroll
-add content
+TODO: 
+[] ADD CONTENT
+[] BROWSER TESTS
+[] RESPONSIVE IMAGES

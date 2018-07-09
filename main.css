@@ -12,11 +12,10 @@ h1{
 	text-align: center;
 	font-family: Helvetica;
 	font-weight: bold;
-	font-size: 100px;
+	font-size: 80px;
 	letter-spacing: 5px;
 	background-color: #ffffff;
 	width: 100%;
-	text-size-adjust: 30%;
 }
 
 /* Style tab links */
@@ -53,12 +52,14 @@ h1{
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
+	position: relative;
     color: #000000;
     background-color:#fff;
     display: none;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 40px 40px 40px;
     height: 100vh;
-    margin: 0px 170px 0px 170px;
+    margin: 0px 0px 0px 170px;
+    overflow: hidden;
 }
 
 #redT {
@@ -74,7 +75,7 @@ h1{
 }
 
 #greenT {
-	background-color: #46f900;
+	background-color: #00cc00;
 }
 
 #blueT {
@@ -100,8 +101,8 @@ h1{
 }
 
 #green {
-	color: #46f900;
-	border-color:#46f900;
+	color: #00cc00;
+	border-color:#00cc00;
 }
 
 #blue {
@@ -109,18 +110,90 @@ h1{
 	border-color: #00a5ff;
 }
 
+/* class for static stuff inside of a div */
 .contentbox{
-	height: 100%;
+	position: absolute;
+	height: 80%;
 	margin: 0px 0px 0px 0px;
 	background-color: #ffffff;
 	color: #555555;
-	padding: 10px;
+	padding: 10px 10px 180px 10px;
+	overflow: hidden;
 }
 
-@media only screen and (max-width: 768px) {
+
+.game {
+	position: relative;
+	display: inline-grid;
+	margin: 2% 5% 5% 2%;
+	width: 25%;
+	padding: 0px 0px 0px 0px; /* not sure why 100% is overflowing for caption */
+}
+
+.gameImage {
+	position: relative;	
+	width: 100%;
+	display: table-cell;
+}
+
+.gameCaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	color: #333;
+	padding: 25px 25px 25px 25px;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.game:hover	.gameCaption {
+	width: 80%;
+	height: 100%;
+	display: inline-block;
+}
+
+.game:hover .gameImage {
+	opacity: 0.2;
+}
+
+/* width */
+.gameCaption::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+.gameCaption::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+.gameCaption::-webkit-scrollbar-thumb {
+    background: #ccc; 
+}
+
+/* Handle on hover */
+.gameCaption::-webkit-scrollbar-thumb:hover {
+    background: #0c0; 
+}
+
+@media only screen and (max-width: 900px) {
+    .game{
+    	width: 40%;
+    }
+
+    .gameCaption{
+    	width: 80%;
+    	height: 80%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
     /* For mobile phones: */
     h1{
-    	font-size: 60px;
+    	font-size: 45px;
     	letter-spacing: 2px;
     }
 
@@ -130,10 +203,16 @@ h1{
     	padding: 5px;
     }
 
+    .tablink:hover {
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
     #sidebar {
         width: 100%;
-        margin-top: 0px;
-        margin-left: 0px;
+        padding: 0px;
+        margin: 0px;
         height: 30px;
         overflow-y: hidden;
     }
@@ -148,5 +227,9 @@ h1{
     	margin: 0px 10px 10px 20px;
     }
 
-
-}
+    .game{
+    	align-content: center;
+    	width: 90%;
+    	margin: 2% 2% 15% 2%;
+    }
+} /* end media only */

@@ -11,44 +11,110 @@
 <div id="sidebar">
 	<button class="tablink" onclick="openPage('red', this, '#ff0000')" id="redT">Landing</button>
 	<button class="tablink" onclick="openPage('orange', this, '#ff6e00')" id="orangeT">Resume</button>
-	<button class="tablink" onclick="openPage('yellow', this, '#ffc700')" id="yellowT">Portfolio</button>
-	<button class="tablink" onclick="openPage('green', this, '#46f900')" id="greenT">Library</button>
+	<button class="tablink" onclick="openPage('yellow', this, '#ffc700')" id="yellowT">gallery</button>
+	<button class="tablink" onclick="openPage('green', this, '#00cc00')" id="greenT">Library</button>
 	<button class="tablink" onclick="openPage('blue', this, '#00a5ff')" id="blueT">???</button>
 </div>
 
 <!-- Each page goes with a color" -->
 <div id="red" class="tabcontent">
-	<h1>RED</h1>
+	<h1>LANDING</h1>
   <div class="contentbox">
   		red text goes in here
   </div>
 </div>
 
 <div id="orange" class="tabcontent">
-	<h1>ORANGE</h1>
+	<h1>RESUME</h1>
   <div class="contentbox">
   		orange text goes in here
   </div>
 </div>
 
 <div id="yellow" class="tabcontent">
-	<h1>YELLOW</h1>
+	<h1>GALLERY</h1>
     <div class="contentbox">
   		yellow text goes in here
   </div>
 </div>
 
 <div id="green" class="tabcontent">
-	<h1>GREEN</h1>
+	<h1>LIBRARY</h1>
     <div class="contentbox">
-  		blue text goes in here
-  </div>
+  		<div style="overflow-y: scroll; height:85%;width:100%;padding-right:30px;">
+
+  			<div class="game">
+  				<img src="./images/Bravely_Second.jpg" class="gameImage">
+  				<div class="gameCaption"><p>
+  					Bravely Default is a tactical RPG with a complex class system.
+  					Using your four main charatcers, you gather skills from classes
+  					you're leveled in that you can keep for the rest of the game.
+  					It has some very cute characters, but the combat and plot have
+  					been criticized for repetition. To deal with the grind, I suggest
+  					setting the encounter rate to max and using auto-battle mode.
+  				</p></div>
+  			</div>
+
+  			<div class="game">
+  				<img src="./images/Etrian_Odyssey_Untold_Fafnir.jpg" class="gameImage">
+  				<div class="gameCaption"><p>
+  					Etrian Odyssey is a series in which the hero is responsible for exploring
+  					and mapping out every floor of a deep, multi-level dungeon. This Square Enix title
+  					is notorious for it's difficulty. Even the so-called "picnic" mode will have you
+  					repeating dungeons to grind for items and experience. The Fafnir Knight stood 
+  					out to me due to it's story mode which was reminisent of old-school Fire Emblem.
+
+  				</p></div>
+  			</div>
+
+   			<div class="game">
+  				<img src="./images/Fire_Emblem_Echoes.png" class="gameImage">
+  				<div class="gameCaption">I haven't finished Fire Emblem Echoes but I love Celica.</div>
+  			</div>
+
+  			<div class="game">
+  				<img src="./images/Rune_Factory_4.jpg" class="gameImage">
+  				<div class="gameCaption"><p>
+  					Rune Factory 4 is an extremely addicting game. I have been a long time fan of the Harvest
+  					Moon series since it's Nintendo 64 Days, and I was delighted to place this game and
+  					see just how far the team has come. Rune Factory combines all the best features of farming with
+  					a battle-RPG in which you recruit and raise monsters for your farm, including monster cows and chickens
+  					that become your livestock.
+
+  				</p></div>
+  			</div>
+
+  			<div class="game">
+  				<img src="./images/Tales_Of_Symphonia_2.jpg" class="gameImage">
+  				<div class="gameCaption"><p>
+  					I have replayed Tales of Symphonia 2 multiple times and I still haven't
+  					found out all of the secrets hidden in the game. I admittedly played this before the original, and I
+  					am still very in love with the story of Dawn of the New World. There is a lot of great character conflict and
+  					I also enjoyed raising and taming monsters. My biggest complaint is a lack of data and intuition on how 
+  					monsters grow. Still, Marta and Emil are some of my favorite protagonists ever.
+  				</p></div>
+  			</div>
+
+  			<div class="game">
+  				<img src="./images/Okami.jpg" class="gameImage">
+  				<div class="gameCaption"><p>
+  					Okami is the best game I have played in my entire life. I would highly recommend playing
+  					it on the wii simply for the interactions. The game is beautiful, thoughtful, and large. There's
+  					a giant world to explore, tons of side-quests to do, and a compelling story that makes you keep
+  					coming back to this game. There was one time when I spent 72 hours straight awake in my life, and
+  					it was the summer that I played this game. 
+  				</p></div>
+  			</div>
+
+  		</div>
+  		</p>
+  	</div>
 </div>
 
 <div id="blue" class="tabcontent">
-	<h1>BLUE</h1>
+	<h1>MORE</h1>
    <div class="contentbox">
-  		purple text goes in here
+  		blue text goes in here
   </div>
 </div>
 
@@ -72,10 +138,9 @@ function openPage(pageName,elmnt,color) {
     }
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
-    //change color of sidebar?
     document.getElementById("sidebar").style.backgroundColor = color;
 
 }
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("redT").click();
+document.getElementById("greenT").click();
+
 </script>
