@@ -16,6 +16,7 @@ h1{
 	letter-spacing: 5px;
 	background-color: #ffffff;
 	width: 100%;
+	text-size-adjust: 30%;
 }
 
 /* Style tab links */
@@ -42,9 +43,10 @@ h1{
 
 #sidebar{
     width: 130px;
+    height: 100%;
     position: fixed;
     z-index: 1;
-    background-color: #ffffff;
+    background-color: #000000;
     overflow-x: hidden;
     margin: 0px 0px 0px 20px;
 }
@@ -56,9 +58,7 @@ h1{
     display: none;
     padding: 0px 40px 0px 40px;
     height: 100vh;
-    margin: 0px 190px 0px 20px;
-    border-style: solid;	
-    border-width: 0px 0px 0px 130px;
+    margin: 0px 170px 0px 170px;
 }
 
 #redT {
@@ -117,10 +117,36 @@ h1{
 	padding: 10px;
 }
 
-div.Rainbow {
-	height: 30px;
-	width: 50%;
-	margin: 0 auto;
-	background-image: linear-gradient(0deg, #804444 8.33%, #aa6633 8.33%, #aa6633 16.67%, #608545 16.67%, #608545 25%, #116680 25%, #116680 33.33%, #333370 33.33%, #333370 41.67%, #533366 41.67%, #533366 50%, #804444 50%, #804444 58.33%, #aa6633 58.33%, #aa6633 66.67%, #608545 66.67%, #608545 75%, #116680 75%, #116680 83.33%, #333370 83.33%, #333370 91.67%, #533366 91.67%, #533366 100%);
-	background-size: 60.00px 60.00px;
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    h1{
+    	font-size: 60px;
+    	letter-spacing: 2px;
+    }
+
+    .tablink {
+    	width:20% ;
+    	font-size: 12px;
+    	padding: 5px;
+    }
+
+    #sidebar {
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        height: 30px;
+        overflow-y: hidden;
+    }
+
+    #blueT {
+    	border: 0px;
+    }
+
+    .tabcontent {
+    	background-color: #ffffff;
+    	padding: 35px 0px 0px 0px;
+    	margin: 0px 10px 10px 20px;
+    }
+
+
 }
