@@ -1,0 +1,126 @@
+body{
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+}
+
+h1{
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 100px;
+	letter-spacing: 5px;
+	background-color: #ffffff;
+	width: 100%;
+}
+
+/* Style tab links */
+.tablink {
+    color: #000;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-transform: lowercase;
+    width: 100%;
+}
+
+.tablink:hover {
+    background-color: #ccc;
+    color:#ffffff;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+#sidebar{
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    margin: 0px 0px 0px 20px;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: #000000;
+    background-color:#fff;
+    display: none;
+    padding: 0px 40px 0px 40px;
+    height: 100vh;
+    margin: 0px 190px 0px 20px;
+    border-style: solid;	
+    border-width: 0px 0px 0px 130px;
+}
+
+#redT {
+	background-color: #ff0000;
+}
+
+#orangeT {
+	background-color: #ff6e00;
+}
+
+#yellowT {
+	background-color: #ffc700;
+}
+
+#greenT {
+	background-color: #46f900;
+}
+
+#blueT {
+	background-color: #00a5ff;
+	border-style: solid;
+	border-width: 0px 0px 10px 0px;
+	border-color: #ffffff;
+}
+
+#red {
+	color: #ff0000;
+	border-color: #ff0000;
+}
+
+#orange {
+	color: #ff6e00;
+	border-color: #ff6e00;
+}
+
+#yellow {
+	color: #ffc700;
+	border-color: #ffc700;
+}
+
+#green {
+	color: #46f900;
+	border-color:#46f900;
+}
+
+#blue {
+	color: #00a5ff;
+	border-color: #00a5ff;
+}
+
+.contentbox{
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	background-color: #ffffff;
+	color: #555555;
+	padding: 10px;
+}
+
+div.Rainbow {
+	height: 30px;
+	width: 50%;
+	margin: 0 auto;
+	background-image: linear-gradient(0deg, #804444 8.33%, #aa6633 8.33%, #aa6633 16.67%, #608545 16.67%, #608545 25%, #116680 25%, #116680 33.33%, #333370 33.33%, #333370 41.67%, #533366 41.67%, #533366 50%, #804444 50%, #804444 58.33%, #aa6633 58.33%, #aa6633 66.67%, #608545 66.67%, #608545 75%, #116680 75%, #116680 83.33%, #333370 83.33%, #333370 91.67%, #533366 91.67%, #533366 100%);
+	background-size: 60.00px 60.00px;
+}

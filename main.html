@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+	<meta name="description" content="Webpage devoted to Kris Lawton">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<!-- Sidebar should be fixed and rainbow -->
+<div id="sidebar">
+	<button class="tablink" onclick="openPage('red', this, '#ff0000')" id="redT">Landing</button>
+	<button class="tablink" onclick="openPage('orange', this, '#ff6e00')" id="orangeT">Resume</button>
+	<button class="tablink" onclick="openPage('yellow', this, '#ffc700')" id="yellowT">Portfolio</button>
+	<button class="tablink" onclick="openPage('green', this, '#46f900')" id="greenT">Library</button>
+	<button class="tablink" onclick="openPage('blue', this, '#00a5ff')" id="blueT">???</button>
+</div>
+
+<!-- Each page goes with a color" -->
+<div id="red" class="tabcontent">
+	<h1>RED</h1>
+  <div class="contentbox">
+  		red text goes in here
+  </div>
+</div>
+
+<div id="orange" class="tabcontent">
+	<h1>ORANGE</h1>
+  <div class="contentbox">
+  		orange text goes in here
+  </div>
+</div>
+
+<div id="yellow" class="tabcontent">
+	<h1>YELLOW</h1>
+    <div class="contentbox">
+  		yellow text goes in here
+  </div>
+</div>
+
+<div id="green" class="tabcontent">
+	<h1>GREEN</h1>
+    <div class="contentbox">
+  		blue text goes in here
+  </div>
+</div>
+
+<div id="blue" class="tabcontent">
+	<h1>BLUE</h1>
+   <div class="contentbox">
+  		purple text goes in here
+  </div>
+</div>
+
+
+</body>
+
+<script>
+
+//credit: https://www.w3schools.com/howto/howto_js_full_page_tabs.asp
+
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("redT").click();
+</script>
