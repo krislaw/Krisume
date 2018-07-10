@@ -16,6 +16,15 @@ h1{
 	letter-spacing: 5px;
 	background-color: #ffffff;
 	width: 100%;
+
+	border-style: solid;
+	border-color: #777;
+	border-width: 0px 0px 5px 0px;
+	border-radius: 0px 0px 15px 15px;
+}
+
+h2{
+	font-size: 30px;
 }
 
 /* Style tab links */
@@ -63,7 +72,12 @@ h1{
 }
 
 #redT {
+	margin: 80px 0px 0px 0px;
+	border-style: solid;
+	border-width: 10px 0px 0px 0px;
+	border-color: #ffffff;
 	background-color: #ff0000;
+	border-radius: 25px 25px 0px 0px;
 }
 
 #orangeT {
@@ -82,7 +96,8 @@ h1{
 	background-color: #00a5ff;
 	border-style: solid;
 	border-width: 0px 0px 10px 0px;
-	border-color: #ffffff;
+	border-color: #222;
+	border-radius: 0px 0px 25px 25px;
 }
 
 #red {
@@ -111,16 +126,76 @@ h1{
 }
 
 /* class for static stuff inside of a div */
-.contentbox{
+.contentbox {
 	position: absolute;
 	height: 90%;
+	width: 92%;
 	margin: 0px 0px 0px 0px;
-	background-color: #ffffff;
+	background-color: #fff;
 	color: #555555;
-	padding: 10px 10px 180px 10px;
+	padding: 0px 10px 180px 10px;
 	overflow: hidden;
 }
 
+#landing {
+	margin: 50px auto;
+	text-align: center;
+	min-width: 300px;
+	max-width: 800px;
+	font-family: Helvetica;
+}
+
+#redArc {
+	margin: 0 auto;
+	padding: 50px 0px 0px 0px;
+	background-color: #f00;
+	width:	600px;
+	height: 300px;
+	border-radius: 300px 300px 0px 0px;
+}
+
+#orangeArc{
+	margin: 0 auto;
+	padding: 50px 0px 0px 0px;
+	background-color: #ff6e00;
+	width:	500px;
+	height: 250px;
+	border-radius: 250px 250px 0px 0px;
+}
+
+#yellowArc{
+	margin: 0 auto;
+	padding: 50px 0px 0px 0px;
+	background-color: #ffc700;
+	width:	400px;
+	height: 200px;
+	border-radius: 200px 200px 0px 0px;
+}
+
+#greenArc{
+	margin: 0 auto;
+	padding: 50px 0px 0px 0px;
+	background-color: #0c0;
+	width:	300px;
+	height: 150px;
+	border-radius: 150px 150px 0px 0px;
+}
+#blueArc{
+	margin: 0 auto;
+	padding: 50px 0px 0px 0px;
+	background-color: #00a5ff;
+	width:	200px;
+	height: 100px;
+	border-radius: 100px 100px 0px 0px;
+}
+#whiteArc {
+	margin: 0 auto;
+	padding: 50px 0px 0px 0px;
+	background-color: white;
+	width:	100px;
+	height: 50px;
+	border-radius: 50px 50px 0px 0px;
+}
 
 .game {
 	position: relative;
@@ -137,6 +212,7 @@ h1{
 .gameImage {
 	position: relative;	
 	width: 100%;
+	border-radius: 30px;
 	display: table-cell;
 }
 
@@ -158,14 +234,15 @@ h1{
 
 .game:hover	.gameCaption {
 	display: inline-block;
-
+/*
 	border-width: 2px;
 	border-style: solid;
 	border-color: #222;
+	*/
 }
 
 .game:hover .gameImage {
-	opacity: 0.15;
+	opacity: 0.25;
 }
 
 /* width */
@@ -193,6 +270,48 @@ h1{
     	font-size: 50px;
     	letter-spacing: 2px;
     }
+
+    .gameCaption{
+    	font-size: 16;
+    }
+
+    #redArc{
+    	padding: 25px 0px 0px 0px;
+    	width:	350px;
+		height: 175px;
+		border-radius: 175px 175px 0px 0px;
+    }
+    #orangeArc{
+    	padding: 25px 0px 0px 0px;
+    	width:	300px;
+		height: 150px;
+		border-radius: 150px 150px 0px 0px;
+    }
+    #yellowArc{
+    	padding: 25px 0px 0px 0px;
+    	width:	250px;
+		height: 125px;
+		border-radius: 125px 125px 0px 0px;
+    }
+    #greenArc{
+    	padding: 25px 0px 0px 0px;
+    	width:	200px;
+		height: 100px;
+		border-radius: 100px 100px 0px 0px;
+    }
+    #blueArc{
+    	padding: 25px 0px 0px 0px;
+    	width:	150px;
+		height: 75px;
+		border-radius: 75px 75px 0px 0px;
+    }
+    #whiteArc{
+    	padding: 25px 0px 0px 0px;
+    	width:	100px;
+		height: 50px;
+		border-radius: 50px 50px 0px 0px;
+    }
+
 }
 
 @media only screen and (max-width: 440px) {
@@ -227,16 +346,24 @@ h1{
     }
 
     #redT {
+    	margin: 0px;
     	border-width: 0px 1px 1px 0px;
+    	border-radius: 0px;
     }
 
     #blueT {
     	border-width: 0px 0px 1px 1px;
+    	border-radius: 0px;
+    	border-color: #fff;
     }
 
     .tabcontent {
     	background-color: #ffffff;
     	padding: 35px 0px 0px 0px;
     	margin: 0px 10px 10px 20px;
+    }
+
+    .gameCaption{
+    	font-size: 16px;
     }
 } /* end media only */
