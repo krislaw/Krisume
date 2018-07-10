@@ -13,7 +13,7 @@
 	<button class="tablink" onclick="openPage('orange', this, '#edd06a')" id="orangeT">Resume</button>
 	<button class="tablink" onclick="openPage('yellow', this, '#7dce82')" id="yellowT">gallery</button>
 	<button class="tablink" onclick="openPage('green', this, '#3bb3d8')" id="greenT">Library</button>
-	<button class="tablink" onclick="openPage('blue', this, '#a17caf')" id="blueT">???</button>
+	<button class="tablink" onclick="openPage('blue', this, '#a17caf')" id="blueT">Contact</button>
 </div>
 
 <!-- Each page goes with a color" -->
@@ -31,7 +31,20 @@
 <div id="orange" class="tabcontent">
 	<h1 style="background-color:#edd06a;">RESUME</h1>
   <div class="contentbox">
-  		orange text goes in here
+  	<div class="resumeBox">
+  		<div class="resumeItem" onclick="openResume('ri1', this)">
+  			<h3>Engineering Resident, Google</h3>
+  			<p class="resumeCaption" id="ri1">September 2018</p>
+  		</div>
+  		<div class="resumeItem" onclick="openResume('ri2', this)">
+  			<h3>Digital Implementation Intern, Microsemi Corp.</h3>
+  			<p class="resumeCaption" id="ri2">Built python and bash scripts to automate Synthesis and APR.</p>
+  		</div>
+  		<div class="resumeItem" onclick="openResume('ri3', this)">
+  			<h3>Graduates Linked With Undergraduates, University of Texas at Austin</h3>
+  			<p class="resumeCaption" id="ri3">Measured the properties of 2D semi-conducting materials.</p>
+  		</div>
+  	</div>
   </div>
 </div>
 
@@ -143,7 +156,7 @@
 </div>
 
 <div id="blue" class="tabcontent">
-	<h1 style="background-color:#a17caf">MORE</h1>
+	<h1 style="background-color:#a17caf">CONTACT</h1>
    <div class="contentbox">
   		blue text goes in here
   </div>
@@ -171,7 +184,18 @@ function openPage(pageName,elmnt,color) {
     elmnt.style.backgroundColor = color;
     document.getElementById("sidebar").style.backgroundColor = color;
 }
+document.getElementById("orangeT").click();
 
-document.getElementById("redT").click();
+</script>
 
+<script>
+function openResume(itemName,elmnt) {
+	var item = document.getElementById(itemName);
+	if(item.style.display == "none"){
+		item.style.display = "block";
+	}
+	else{
+		item.style.display = "none";
+	}
+}
 </script>
