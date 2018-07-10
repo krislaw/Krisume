@@ -1,10 +1,27 @@
 body{
 	background-color: white;
+	color: #777;
+	font-family: verdana;
 	width: 100%;
 	height: 100%;
 	margin:0;
 	padding: 0;
 	overflow: hidden;
+}
+
+p{
+	font-family: inherit;
+	font-size: 18px;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+	letter-spacing: 2px;
 }
 
 h1{
@@ -14,11 +31,12 @@ h1{
 	font-weight: bold;
 	font-size: 80px;
 	letter-spacing: 5px;
-	background-color: #ffffff;
+	background-color: #777;
+	color: #fff;
 	width: 100%;
 
 	border-style: solid;
-	border-color: #777;
+	border-color: #333;
 	border-width: 0px 0px 5px 0px;
 	border-radius: 0px 0px 15px 15px;
 }
@@ -29,7 +47,7 @@ h2{
 
 /* Style tab links */
 .tablink {
-    color: #000;
+    color: #333;
     float: left;
     border: none;
     outline: none;
@@ -44,7 +62,7 @@ h2{
 
 .tablink:hover {
     background-color: #ccc;
-    color:#ffffff;
+    color:#000;
     font-style: italic;
     letter-spacing: 2px;
 }
@@ -76,43 +94,43 @@ h2{
 	border-style: solid;
 	border-width: 10px 0px 0px 0px;
 	border-color: #ffffff;
-	background-color: #ff0000;
+	background-color: #ff8360;
 	border-radius: 25px 25px 0px 0px;
 }
 
 #orangeT {
-	background-color: #ff6e00;
+	background-color: #edd06a;
 }
 
 #yellowT {
-	background-color: #ffc700;
+	background-color: #7dce82;
 }
 
 #greenT {
-	background-color: #00cc00;
+	background-color: #3bb3d8;
 }
 
 #blueT {
-	background-color: #00a5ff;
+	background-color: #a17caf;
 	border-style: solid;
 	border-width: 0px 0px 10px 0px;
-	border-color: #222;
+	border-color: #333;
 	border-radius: 0px 0px 25px 25px;
 }
 
 #red {
-	color: #ff0000;
-	border-color: #ff0000;
+	color: #ff8360;
+	border-color: #ff8360;
 }
 
 #orange {
-	color: #ff6e00;
-	border-color: #ff6e00;
+	color: #edd06a;
+	border-color: #edd06a;
 }
 
 #yellow {
-	color: #ffc700;
-	border-color: #ffc700;
+	color: #7dce82;
+	border-color: #7dce82;
 }
 
 #green {
@@ -121,8 +139,8 @@ h2{
 }
 
 #blue {
-	color: #00a5ff;
-	border-color: #00a5ff;
+	color: #a17caf;
+	border-color: #a17caf;
 }
 
 /* class for static stuff inside of a div */
@@ -148,7 +166,7 @@ h2{
 #redArc {
 	margin: 0 auto;
 	padding: 20px 0px 0px 0px;
-	background-color: #f00;
+	background-color: #ff8360;
 	width:	500px;
 	height: 250px;
 	border-radius: 250px 250px 0px 0px;
@@ -157,7 +175,7 @@ h2{
 #orangeArc{
 	margin: 0 auto;
 	padding: 20px 0px 0px 0px;
-	background-color: #ff6e00;
+	background-color: #edd06a;
 	width:	460px;
 	height: 230px;
 	border-radius: 230px 230px 0px 0px;
@@ -166,7 +184,7 @@ h2{
 #yellowArc{
 	margin: 0 auto;
 	padding: 20px 0px 0px 0px;
-	background-color: #ffc700;
+	background-color: #7dce82;
 	width:	420px;
 	height: 210px;
 	border-radius: 210px 210px 0px 0px;
@@ -175,7 +193,7 @@ h2{
 #greenArc{
 	margin: 0 auto;
 	padding: 20px 0px 0px 0px;
-	background-color: #0c0;
+	background-color: #3bb3d8;
 	width:	380px;
 	height: 190px;
 	border-radius: 190px 190px 0px 0px;
@@ -183,7 +201,7 @@ h2{
 #blueArc{
 	margin: 0 auto;
 	padding: 20px 0px 0px 0px;
-	background-color: #00a5ff;
+	background-color: #a17caf;
 	width:	340px;
 	height: 170px;
 	border-radius: 170px 170px 0px 0px;
@@ -222,7 +240,7 @@ h2{
 	right: 0;
 	bottom: 0;
 	display: none;
-	color: #222;
+	color: #333;
 	padding: 25px 25px 25px 25px;
 	font-family: Verdana;
 	font-weight: bold;
@@ -236,7 +254,7 @@ h2{
 /*
 	border-width: 2px;
 	border-style: solid;
-	border-color: #222;
+	border-color: #333;
 	*/
 }
 
@@ -261,7 +279,7 @@ h2{
 
 /* Handle on hover */
 .gameCaption::-webkit-scrollbar-thumb:hover {
-    background: #0c0; 
+    background: #3bb3d8; 
 }
 
 @media only screen and (max-width: 800px) {
@@ -316,12 +334,14 @@ h2{
 @media only screen and (max-width: 440px) {
     /* For mobile phones: */
     h1{
-    	font-size: 45px;
-    	letter-spacing: 2px;
+    	display: none;
     }
-
+    #sidebar{
+    	background-color: #fff;
+    }
     .tablink {
     	width:20% ;
+    	height: 100%;
     	font-size: 12px;
     	padding: 5px;
     	border-style: solid;
@@ -362,6 +382,9 @@ h2{
     	margin: 0px 10px 10px 20px;
     }
 
+    .game{
+    	margin-top: 80px;
+    }
     .gameCaption{
     	font-size: 16px;
     }

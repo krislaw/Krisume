@@ -9,40 +9,41 @@
 <body>
 <!-- Sidebar should be fixed and rainbow -->
 <div id="sidebar">
-	<button class="tablink" onclick="openPage('red', this, '#ff0000')" id="redT">Landing</button>
-	<button class="tablink" onclick="openPage('orange', this, '#ff6e00')" id="orangeT">Resume</button>
-	<button class="tablink" onclick="openPage('yellow', this, '#ffc700')" id="yellowT">gallery</button>
-	<button class="tablink" onclick="openPage('green', this, '#00cc00')" id="greenT">Library</button>
-	<button class="tablink" onclick="openPage('blue', this, '#00a5ff')" id="blueT">???</button>
+	<button class="tablink" onclick="openPage('red', this, '#ff8360')" id="redT">Landing</button>
+	<button class="tablink" onclick="openPage('orange', this, '#edd06a')" id="orangeT">Resume</button>
+	<button class="tablink" onclick="openPage('yellow', this, '#7dce82')" id="yellowT">gallery</button>
+	<button class="tablink" onclick="openPage('green', this, '#3bb3d8')" id="greenT">Library</button>
+	<button class="tablink" onclick="openPage('blue', this, '#a17caf')" id="blueT">???</button>
 </div>
 
 <!-- Each page goes with a color" -->
 <div id="red" class="tabcontent">
-	<h1>LANDING</h1>
+	<h1 style="background-color:#ff8360;">LANDING</h1>
   <div class="contentbox">
   		<div id="landing">
-  			<h2> Welcome to my website! </h2>	
+  			<h2><a href="https://github.com/krislaw" target="_blank"> krislaw @ github </a></h2>
+  			</p>
   			<div id="redArc"><div id="orangeArc"><div id="yellowArc"><div id="greenArc"><div id="blueArc"><div id="whiteArc"></div></div></div></div></div></div>
   		</div>
   </div>
 </div>
 
 <div id="orange" class="tabcontent">
-	<h1>RESUME</h1>
+	<h1 style="background-color:#edd06a;">RESUME</h1>
   <div class="contentbox">
   		orange text goes in here
   </div>
 </div>
 
 <div id="yellow" class="tabcontent">
-	<h1>GALLERY</h1>
+	<h1 style="background-color:#7dce82;">GALLERY</h1>
     <div class="contentbox">
   		yellow text goes in here
   </div>
 </div>
 
 <div id="green" class="tabcontent">
-	<h1>LIBRARY</h1>
+	<h1 style="background-color:#3bb3d8;">LIBRARY</h1>
     <div class="contentbox">
   		<div style="overflow-y: scroll; height:85%;width:100%;padding-right:30px;">
 
@@ -60,7 +61,9 @@
 
    			<div class="game">
   				<img src="./images/Fire_Emblem_Echoes.png" class="gameImage">
-  				<div class="gameCaption">I haven't finished Fire Emblem Echoes but I love Celica.</div>
+  				<div class="gameCaption"><p>
+  					I haven't finished Fire Emblem Echoes but I love Celica.
+  				</p></div>
   			</div>
 
   			<div class="game">
@@ -140,7 +143,7 @@
 </div>
 
 <div id="blue" class="tabcontent">
-	<h1>MORE</h1>
+	<h1 style="background-color:#a17caf">MORE</h1>
    <div class="contentbox">
   		blue text goes in here
   </div>
@@ -167,8 +170,8 @@ function openPage(pageName,elmnt,color) {
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
     document.getElementById("sidebar").style.backgroundColor = color;
-
 }
+
 document.getElementById("redT").click();
 
 </script>
