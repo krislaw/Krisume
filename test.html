@@ -1,0 +1,58 @@
+<div class="game" style="background:url(./images/Bravely_Second.jpg); background-size: contain;">
+  hello world
+     <div class="gameCaption"><p>
+            Bravely Default is a tactical RPG with a complex class system.
+            Using your four main charatcers, you gather skills from classes
+            you're leveled in that you can keep for the rest of the game.
+            It has some very cute characters, but the combat and plot have
+            been criticized for repetition. To deal with the grind, I suggest
+            setting the encounter rate to max and using auto-battle mode.
+          </p></div>
+
+</div>
+
+
+<style>
+
+.game {
+  position: relative;
+  display: inline-grid;
+  vertical-align: top;
+  margin: 2% 5% 5% 2%;
+  /*width: 25%;*/
+  min-width: 400px;
+  min-height: 400px;
+  padding: 0px 0px 0px 0px; /* not sure why 100% is overflowing for caption */
+}
+
+.gameImage {
+  position: relative; 
+  width: 100%;
+  display: table-cell;
+}
+
+.gameCaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #222;
+  padding: 25px 25px 25px 25px;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 14px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.game:hover .gameCaption {
+
+  display: inline-block;
+}
+
+.game:hover .gameImage {
+  opacity: 0.15;
+}
+</style>

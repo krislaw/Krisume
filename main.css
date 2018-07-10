@@ -113,7 +113,7 @@ h1{
 /* class for static stuff inside of a div */
 .contentbox{
 	position: absolute;
-	height: 80%;
+	height: 90%;
 	margin: 0px 0px 0px 0px;
 	background-color: #ffffff;
 	color: #555555;
@@ -125,8 +125,12 @@ h1{
 .game {
 	position: relative;
 	display: inline-grid;
+	vertical-align: top;
 	margin: 2% 5% 5% 2%;
-	width: 25%;
+	min-width: 150px;
+  	min-height: 150px;
+  	max-width: 250px;
+  	max-height: 600px;
 	padding: 0px 0px 0px 0px; /* not sure why 100% is overflowing for caption */
 }
 
@@ -140,23 +144,28 @@ h1{
 	position: absolute;
 	top: 0;
 	left: 0;
+	right: 0;
+	bottom: 0;
 	display: none;
-	color: #333;
+	color: #222;
 	padding: 25px 25px 25px 25px;
-	font-family: arial;
+	font-family: Verdana;
 	font-weight: bold;
-	font-size: 12px;
-	overflow: hidden;
+	font-size: 14px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .game:hover	.gameCaption {
-	width: 80%;
-	height: 100%;
 	display: inline-block;
+
+	border-width: 2px;
+	border-style: solid;
+	border-color: #222;
 }
 
 .game:hover .gameImage {
-	opacity: 0.2;
+	opacity: 0.15;
 }
 
 /* width */
@@ -179,18 +188,14 @@ h1{
     background: #0c0; 
 }
 
-@media only screen and (max-width: 900px) {
-    .game{
-    	width: 40%;
-    }
-
-    .gameCaption{
-    	width: 80%;
-    	height: 80%;
+@media only screen and (max-width: 800px) {
+	h1{
+    	font-size: 50px;
+    	letter-spacing: 2px;
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 440px) {
     /* For mobile phones: */
     h1{
     	font-size: 45px;
@@ -201,13 +206,17 @@ h1{
     	width:20% ;
     	font-size: 12px;
     	padding: 5px;
+    	border-style: solid;
+    	border-color: #fff;
+    	border-width: 0px 1px 1px 1px;
+
     }
 
     .tablink:hover {
     font-style: italic;
     font-weight: normal;
     letter-spacing: 1px;
-}
+	}
 
     #sidebar {
         width: 100%;
@@ -217,19 +226,17 @@ h1{
         overflow-y: hidden;
     }
 
+    #redT {
+    	border-width: 0px 1px 1px 0px;
+    }
+
     #blueT {
-    	border: 0px;
+    	border-width: 0px 0px 1px 1px;
     }
 
     .tabcontent {
     	background-color: #ffffff;
     	padding: 35px 0px 0px 0px;
     	margin: 0px 10px 10px 20px;
-    }
-
-    .game{
-    	align-content: center;
-    	width: 90%;
-    	margin: 2% 2% 15% 2%;
     }
 } /* end media only */
