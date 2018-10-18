@@ -1,4 +1,4 @@
-LIVE DEMO: http://krislaw.github.io/Krisume/main.html
+LIVE DEMO: http://krislaw.github.io/Rainbow-Me/main.html
 
 wip!
 
